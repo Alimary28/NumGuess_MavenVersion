@@ -6,7 +6,7 @@ version 1.0
 */
 
 body {
-    background-color:floralwhite;
+    background:gray url("https://davidwalsh.name/demo/sequence-js-images/background-animation.gif") no-repeat 35px 240px ;
     font-family: Verdana, Helvetica, Arial, sans-serif;
     line-height: 125%;
     padding: 0;
@@ -16,8 +16,8 @@ body {
 
 h1 {
     font-size: large;
-    background-color: deepskyblue;
-    color: white;
+    background-color: lightgray;
+    color: darkslateblue;
     padding-top: 2em;
     padding-bottom: .2em;
     padding-left: .4em;
@@ -27,9 +27,9 @@ h1 {
 #tagline p {
     font-style: italic;
     font-family: Georgia, Times, serif;
-    background-color: #bed8f3;
-    border-top: 3px solid #7da5d8;
-    border-bottom: 3px solid #7da5d8;
+    background-color:gainsboro;
+    border-top: 3px solid indigo;
+    border-bottom: 3px solid indigo;
     padding-top: .2em;
     padding-bottom: .2em;
     padding-left: .8em;
@@ -38,48 +38,81 @@ h1 {
 
 #header {
     position: absolute;
-    border-top: 3px solid #7da5d8;
+    border-top: 3px solid indigo;
     width: 100%;
 }
 
-#navigation {
+
+/* #navigation {
     position: absolute;
     top: 110px;
     width: 110px;
     height: 180px;
-    background-color: navajowhite;
+    background-color: gainsboro;
     color:black;
     padding-left: .8em;
 ;
+} */
+#navigation{
+    position: absolute;
+    top: 110px;
+    left: 1px;
+    background-color: transparent;
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
 }
 
 #bodycontent {
     position: absolute;
-    left: 140px;
+    left: 190px;
     top: 120px;
     padding-top:.4em;
     padding-left:2em;
 }
 
-#postcontent {
+/* #postcontent {
     position: absolute;
-    left: 360px;
+    left: 410px;
     top: 110px;
     width: 120px;
     height:180px;
-    background-color: navajowhite;
+    background-color: gainsboro;
     color:black;
     padding-left: .8em;
 ;
+} */
+#postcontent {
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    left: 450px;
+    top: 110px;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
 }
-
+ a {
+     background-color: darkslateblue;
+     color: gainsboro;
+     padding: 14px 20px;
+     margin: 2px;
+     border: solid gainsboro;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+ }
 #serverResponse {
     color:red;
     position: absolute;
     top: 210px;
     left: 140px;
     width: 200px;
-    background-color: floralwhite;
+    background-color: gray;
     color: blue;
     padding-left: .8em;
 
@@ -90,21 +123,11 @@ h1 {
     top: 250px;
     left: 140px;
     width: 200px;
-    background-color: floralwhite;
+    background-color: gray;
     color: blue;
     padding-left: .8em;
 
 }
-
-
-
-
-
-
-
-
-
-
 
 /* padding - between border and text -*/
 

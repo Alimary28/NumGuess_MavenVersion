@@ -35,7 +35,8 @@
 
                  var keyError = jSonMessage.keyError;
                  if (keyError != undefined && keyError.length > 0) {
-                     alert("Trebuie sa introduceti un numar valid!");
+                    //alert("Trebuie sa introduceti un numar valid!");
+                     alert("Please insert a fruit !")
                      return;
                  }
                 var keySuccess = jSonMessage.keySuccess;
@@ -52,7 +53,7 @@
                  else
                  if(keySuccess=="true")
                  {
-                     document.getElementById("serverResponse").innerHTML = "Congrats, you guessed the number " + document.getElementById("number").value + " after " + keyNrGuesses + " guesses.";
+                     document.getElementById("serverResponse").innerHTML = "Congrats, you guessed the fruit " + document.getElementById("number").value + " after " + keyNrGuesses + " guesses.";
                      document.getElementById("time").innerHTML ="You guessed after: " + diff + " seconds";
                  }
              }

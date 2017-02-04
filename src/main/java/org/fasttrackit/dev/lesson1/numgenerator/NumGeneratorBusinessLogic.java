@@ -1,5 +1,7 @@
 package org.fasttrackit.dev.lesson1.numgenerator;
 
+import com.sun.org.apache.xpath.internal.SourceTree;
+
 /**
  * Created by condor on 29/11/14.
  * FastTrackIT, 2015
@@ -25,6 +27,13 @@ public class NumGeneratorBusinessLogic {
     private int numberOfGuesses;
     private int generatedNumber;
     private String hint;
+
+    private double startT;
+    private double diff;
+
+    public double getDiff(){
+        return diff;
+    }
 
     public NumGeneratorBusinessLogic(){
         resetNumberGenerator();
@@ -57,11 +66,22 @@ public class NumGeneratorBusinessLogic {
             generatedNumber = NumGenerator.generate(MAX_NUMBER);
             System.out.println("gennr:"+generatedNumber);
             isFirstTime = false;
+
+             startT = System.currentTimeMillis();
+            System.out.println("Am pornit la :"+ startT);
         }
         numberOfGuesses++;
         if (guessNumber == generatedNumber) {
             hint="";
             successfulGuess = true;
+
+            long stopT = System.currentTimeMillis();
+            System.out.println("Am ghicit la :" +stopT);
+
+            diff = (stopT-startT)/1000.0;
+
+            System.out.println("Diferenta este :"+ diff);
+
         } else if (guessNumber < generatedNumber) {
             hint = "higher";
             successfulGuess = false;
